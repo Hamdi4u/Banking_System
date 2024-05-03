@@ -67,7 +67,7 @@ namespace Banking_System.Objects
                 if (Balance < amount)
                 {
                     throw new InvalidOperationException("Insufficient funds.");
-                }
+    }
                 Balance -= amount;
             }
 
