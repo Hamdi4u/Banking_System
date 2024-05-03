@@ -42,10 +42,7 @@ namespace Banking_System.Objects
         public List<Customer> AccountHoldersList { get; set; } // List of AccountHolders
         public Bank Bank { get; set; }
         public string AccountType { get; set; }
-        public decimal Balance { get;set; }
-
-
-
+        public decimal Balance { get; set; }
 
         public Account(decimal initialBalance)
             {
@@ -73,11 +70,12 @@ namespace Banking_System.Objects
                 }
                 Balance -= amount;
             }
-       
+
+    
 
     }
 
-    // Derived class for Savings Account
+    /// Derived class for Savings Account
     public class SavingsAccount : Account
     {
         public decimal InterestRate { get; set; }
